@@ -1,0 +1,15 @@
+# One-click deploy: https://render.com/deploy?repo=https://github.com/shaikhmubin02/paperwise
+services:
+  - type: web
+    name: paperwise
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/samples
+    envVars:
+      - key: NEBIUS_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: DATA_DIR
+        value: /tmp/paperwise
