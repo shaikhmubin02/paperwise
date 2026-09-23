@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paperwise — the AI that reads your scary mail</title>
+  <meta name="description" content="Snap a photo of any intimidating letter. Paperwise explains it in your language, spots scams, researches your rights, tracks deadlines and drafts your reply. Powered by NVIDIA Nemotron on Nebius." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📬</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-mark">📬</span>
+      <span class="brand-name">Paperwise</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#/" data-route="inbox">Inbox</a>
+      <a href="#/deadlines" data-route="deadlines">Deadlines <span class="pill" id="deadline-count" hidden></span></a>
+      <a href="#/ask" data-route="ask">Ask</a>
+      <a href="#/memory" data-route="memory">Memory</a>
+      <a href="#/settings" data-route="settings">Settings</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <span>Runs on <strong>NVIDIA Nemotron</strong> open models via <strong>Nebius Token Factory</strong> · rights research by <strong>Tavily</strong></span>
+    <span class="muted">Paperwise explains; it is not a lawyer. For high-stakes matters, contact free legal aid.</span>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/static/app.js" type="module"></script>
+</body>
+</html>
