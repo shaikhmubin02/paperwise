@@ -15,7 +15,7 @@
 Built for the **Nebius x NVIDIA Global AI Hackathon** · Track: **Personal AI**
 
 ## Try it
-- **Live demo:** _coming soon_. It's hosted on Render's free tier, so the first visit after idle takes about a minute to wake. Click any sample letter; no sign-up needed.
+- **Live demo:** https://paperwise-mg6w.onrender.com. It's hosted on Render's free tier, so the first visit after idle takes about a minute to wake. Click any sample letter; no sign-up needed.
 - **Demo video:** _coming soon_
 - **Deploy your own:** [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/shaikhmubin02/paperwise) (you'll be asked for `NEBIUS_API_KEY` and `TAVILY_API_KEY`)
 
